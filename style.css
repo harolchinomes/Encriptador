@@ -248,7 +248,9 @@ footer {
     }
 
     footer {
-        padding: 15px; /* Aumentar el padding para mejorar la accesibilidad */
+        padding: 20px; /* Aumentar el padding para mejorar la accesibilidad */
+        margin-top: 20px; /* Añadir margen superior para evitar que el footer quede pegado */
+        margin-bottom: 20px; /* Añadir margen inferior para darle espacio en móviles */ /* Aumentar el padding para mejorar la accesibilidad */
     }
 
     .modal-content {
