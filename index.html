@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Vector.png" alt="logo de alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10" readonly></textarea>
+            <article class="output_message">
+                <button id="copyButton" onclick="copyText()">Copiar</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Creado por Harol Jhioset Chinomes Caceres &copy; 2024
+    </footer>
+
+    <!-- Modal para mostrar alertas -->
+    <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <img src="imagenes/carita sonriente.png" alt="alerta" class="modal-image">
+            <p id="modalMessage">Mensaje de alerta aquí</p>
+            <button id="closeModalButton">Cerrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
