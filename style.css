@@ -24,7 +24,7 @@
 
 * {
     background: var(--color-secundario);
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 32px;
     line-height: 90%;
     font-family: "Inter_18pt-Regular", sans-serif; /* Aplicar fuente por defecto */
@@ -197,4 +197,61 @@ footer {
 
 #closeModalButton:hover {
     background-color: var(--color-secundario);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    * {
+        font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .logo {
+        width: 8%; /* Aumentar el tamaño del logo en móviles */
+    }
+
+    main {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+        margin-left: 20px; /* Reducir márgenes en dispositivos móviles */
+        margin-right: 20px;
+    }
+
+    .text-area, .mensaje {
+        margin-top: 20px; /* Reducir márgenes superiores */
+        width: 100%; /* Usar todo el ancho disponible */
+        margin-left: 0; /* Centrar el área de texto */
+    }
+
+    .mensaje {
+        padding-left: 10px; /* Reducir el padding en dispositivos móviles */
+        margin-left: 0; /* Centramos la caja */
+        margin-right: 0;
+        margin-top: 20px;
+        position: relative; /* Cambiar a relative para evitar problemas en móviles */
+        animation: none; /* Desactivar la animación de fondo en móviles para mejorar rendimiento */
+    }
+
+    .botones {
+        flex-direction: column; /* Apilar botones verticalmente */
+        margin-top: 10px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%; /* Usar todo el ancho disponible */
+        margin-left: 0;
+        margin-top: 10px; /* Separar botones en móviles */
+    }
+
+    #copyButton {
+        width: 100%; /* Botón de copiar ocupa todo el ancho */
+        margin-left: 0;
+        margin-top: 20px; /* Ajustar el margen superior */
+    }
+
+    footer {
+        padding: 20px; /* Aumentar el padding para mejorar la accesibilidad */
+    }
+
+    .modal-content {
+        width: 90%; /* Aumentar el ancho del modal para pantallas pequeñas */
+    }
 }
